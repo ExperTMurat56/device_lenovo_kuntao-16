@@ -193,7 +193,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Maintainer
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.havoc.maintainer=ExperT-Murat
+    ro.colt.maintainer=ExperT-Murat
 
 # USB debugging
 PRODUCT_PROPERTY_OVERRIDES += \
