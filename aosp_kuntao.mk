@@ -15,12 +15,16 @@
 #
 
 # Include Havoc common configuration
-include vendor/havoc/config/common_full_phone.mk
+include vendor/aosp/config/common_full_phone.mk
+
+# Gapps
+TARGET_GAPPS_ARCH := arm64
+WITH_GAPPS := true
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1080
 TARGET_SCREEN_WIDTH := 1920
-
+TARGET_BOOT_ANIMATION_RES := 1080
 # Inherit 64-bit configs
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 
@@ -33,7 +37,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 $(call inherit-product, device/lenovo/kuntao/device.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_NAME := havoc_kuntao
+PRODUCT_NAME := aosp_kuntao
 PRODUCT_DEVICE := kuntao
 PRODUCT_BRAND := Lenovo
 PRODUCT_MODEL := Lenovo P2a42
@@ -43,7 +47,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-lenovo
 
 # Maintainer
 PRODUCT_PROPERTY_OVERRIDES += \
- ro.havoc.maintainer=SVB
+ ro.havoc.maintainer=ExperT-MuraT
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="kuntao_row-user 7.0 NRD90N P2a42_S251_171107_ROW release-keys" \
