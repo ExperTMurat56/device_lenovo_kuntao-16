@@ -18,6 +18,7 @@
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1080
 TARGET_SCREEN_WIDTH := 1920
+TARGET_BOOT_ANIMATION_RES := 1080x1920
 
 # Inherit 64-bit configs
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
@@ -27,7 +28,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 
 # Inherit some common Xtended stuff
-$(call inherit-product, vendor/colt/config/common_full_phone.mk)
+$(call inherit-product, vendor/colt/config/common.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/lenovo/kuntao/device.mk)
@@ -43,7 +44,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-lenovo
 
 # Maintainer
 PRODUCT_PROPERTY_OVERRIDES += \
- ro.havoc.maintainer=ExperT-MuraT
+ ro.colt.maintainer=ExperT-MuraT
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="kuntao_row-user 7.0 NRD90N P2a42_S251_171107_ROW release-keys" \
