@@ -368,6 +368,7 @@ PRODUCT_PACKAGES += \
     init.lenovo.common.rc \
     init.qcom.rc \
     init.qcom.sh \
+    init.qcom.power.rc \
     init.qcom.usb.rc \
     init.recovery.qcom.rc \
     init.target.rc \
