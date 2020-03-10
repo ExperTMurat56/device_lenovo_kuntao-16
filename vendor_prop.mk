@@ -25,7 +25,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.audio.fluence.voicecall=true \
     persist.vendor.audio.fluence.voicerec=false \
     persist.vendor.audio.hw.binder.size_kbyte=1024 \
-    ro.vendor.audio.sdk.fluencetype=fluence \
+    ro.vendor.audio.sdk.fluencetype=none \
 		ro.bluetooth.a2dp_offload.supported=true \
     vendor.audio_hal.period_size=192 \
     vendor.audio.hw.aac.encoder=true \
@@ -193,7 +193,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Maintainer
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.havoc.maintainer=SVB
+    ro.havoc.maintainer=ExperT-Murat
 
 # USB debugging
 PRODUCT_PROPERTY_OVERRIDES += \
