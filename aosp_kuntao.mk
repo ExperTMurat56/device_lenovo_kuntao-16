@@ -47,7 +47,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-lenovo
 
 # Maintainer
 PRODUCT_PROPERTY_OVERRIDES += \
- ro.havoc.maintainer=ExperT-MuraT
+ ro.aosp.maintainer=ExperT-MuraT
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="kuntao_row-user 7.0 NRD90N P2a42_S251_171107_ROW release-keys" \
